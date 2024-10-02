@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(assets/images/background.jpg);
+    height: 70vh;
+    position: relative;
+
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+}
+
+.main .box {
+
+    width: 100%;
+    height: 70vh;
+    opacity: 0.69;
+    background-color: black;
+
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    max-width: 60vw;
+    justify-content: space-around;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 62px;
+}
+
+nav img {
+    color: red;
+    width: 120px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: calc(100%-62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    /* font-family: 'Martel Sans', sans-serif; */
+    gap: 24px;
+    padding: 88px 30px;
+
+}
+
+.hero> :first-child {
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sepration {
+    height: 4px;
+    background-color: rgb(52, 52, 52);
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: 500;
+    background-color: rgba(239, 225, 225, 0.152);
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 400px;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.main input {
+    padding: 8px 100px 10px 30px;
+    font-size: 12px;
+    font-weight: 900;
+    border-radius: 4px;
+    color: white;
+    background-color: rgba(23, 23, 23, 0.2);
+    border: 1px solid rgba(239, 225, 225, 0.5);
+
+}
+
+
+.first {
+    display: flex;
+    max-width: 80vw;
+    justify-content: center;
+    margin: auto;
+    color: white;
+    align-items: center;
+    margin-top: 10px;
+}
+
+@media screen and (max-width  :1300px) {
+    .first{
+        flex-wrap: wrap;
+    }
+    
+}
+
+.secimg {
+    position: relative;
+}
+
+.secimg img {
+    width: 555px;
+    position: relative;
+    z-index: 15;
+}
+
+.secimg video {
+    position: absolute;
+    top: 51px;
+    right: 0;
+    /* width: 555px; */
+    /* z-index: 10; */
+    
+}
+
+section.first>div {
+    display: flex;
+    flex-direction: column;
+    /* padding: 34px; */
+
+}
+
+section.first>div :first-child {
+    font-weight: bolder;
+    font-size: 48px;
+}
+
+section.first>div :nth-child(2) {
+    font-size: 24px;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 48px;
+    color: white;
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    padding: 34px;
+}
+
+.faqbox:hover{
+    background-color: gray;
+    color: white;
+}
+
+.faqbox svg{
+    filter: invert(1);
+}
+
+.faqbox {
+    color: white;
+    transform: al 1s ease-out;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    max-width: 60vw;
+    margin: 34px auto;
+    cursor: pointer;
+}
+
+
+
+footer{
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 34px;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+}
+
+.footer a{
+    color: white;
+    font-size: 14px;
+
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.question{
+    padding: 34px;
+}
